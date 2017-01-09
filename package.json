@@ -5,6 +5,7 @@
   "main": "libs/index.js",
   "scripts": {
     "build": "babel src --out-dir libs",
+    "prepublish": "npm run build",
     "test": "ava"
   },
   "keywords": [],

@@ -13,6 +13,10 @@ test.afterEach(() => {
   connection = null;
 });
 
+test('throw if no endpoint', t => {
+  t.throws(() => new Connection());
+});
+
 test('start', t => {
   t.falsy(connection.client);
   connection.start();

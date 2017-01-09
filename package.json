@@ -1,0 +1,39 @@
+{
+  "name": "worona-asteroid",
+  "version": "1.0.0",
+  "description": "Small library to adapt Asteroid for Worona, including redux-saga bindings.",
+  "main": "libs/index.js",
+  "scripts": {
+    "build": "babel src --out-dir libs",
+    "test": "ava"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "ava": {
+    "files": [
+      "tests/**/*.js"
+    ],
+    "watch": true,
+    "verbose": true,
+    "require": [
+      "babel-register",
+      "babel-polyfill"
+    ],
+    "babel": "inherit"
+  },
+  "dependencies": {
+    "asteroid": "^2.0.3"
+  },
+  "peerDependencies": {
+    "redux-saga": "^0.14.2"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "sinon": "^1.17.7",
+    "ws": "^1.1.1"
+  }
+}
